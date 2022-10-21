@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * func_revstr - function that reverses a string
  * @list: is the list of arguments the function _printf receives
