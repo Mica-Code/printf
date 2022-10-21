@@ -1,5 +1,5 @@
-
 #include "main.h"
+
 /**
  * _printf - print a char or a string
  * @format: It's a character string
