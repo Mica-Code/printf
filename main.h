@@ -33,24 +33,18 @@ struct fmt
 	int (*fn)(va_list, char[], int, int, int, int);
 };
 
+
 /**
- * struct format - the struct by name pr_fmt
- * @fmt: index by function
- *pr_fmt: format
- *@fm_t: The function associated
- * @func: pointer to function - funtion print
+ * typedef struct fmt fmt_t - Struct op
+ *
+ * @fmt: The format.
+ * @fm_t: The function associated.
  */
+typedef struct fmt fmt_t;
 
-typedef struct pr_fmt
-{
-	char *fmt;
-	int (*func)(va_list list);
-
-	int _printf(const char *format, ...);
-
-	int handle_print(const char *fmt, int *i,
-	va_list list, char buffer[], int flags, int width, int precision, int size);
-} pr_fmt;
+int _printf(const char *format, ...);
+int handle_print(const char *fmt, int *i,
+va_list list, char buffer[], int flags, int width, int precision, int size);
 
 /****************** FUNCTIONS ******************/
 
