@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * dig_func - Prints an integer
