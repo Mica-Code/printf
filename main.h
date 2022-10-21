@@ -1,11 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
-
 #include <stdarg.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <limits.h>
 #include <stdio.h>
+#include <unistd.h>
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
@@ -116,13 +113,5 @@ int is_digit(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
-
-int _putchar(char c);
-int get_func(const char *format, va_list list, pr_fmt pr_format[]);
-int _printf(const char *format, ...);
-int str_func(va_list);
-int char_func(va_list);
-int func_percent(va_list);
-int dig_func(va_list);
 
 #endif /* MAIN_H */
